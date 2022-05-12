@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
             Slider(
                     value,
                     onValueChange = { value = it },
-                    onValueChangeFinished = { println("Value change finished") }
+                    onValueChangeFinished = { println("Value change finished: value == $value") }
             )
         }
     }
